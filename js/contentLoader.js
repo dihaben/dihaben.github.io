@@ -11,16 +11,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var pageMap = {
         'index.html': { element: 'content', file: 'myindex.html' },
-        'about.html': { element: 'content', file: 'myabout.html' },
-        'education.html': { element: 'content', file: 'myeducation.html' },
-        'experience.html': { element: 'content', file: 'myexperience.html' },
-        'publications.html': { element: 'content', file: 'mypublications.html' },
-        'cv.html': { element: 'content', file: 'mycv.html' },
-        'resume.html': { element: 'content', file: 'myresume.html' },
-        'social.html': { element: 'content', file: 'mysocial.html' },
-        'news.html': { element: 'content', file: 'mynews.html' },
-        'reflections.html': { element: 'content', file: 'myreflections.html' },
-        'other.html': { element: 'content', file: 'myother.html' }
+        'myabout.html': { element: 'content', file: 'about.html' },
+        'myeducation.html': { element: 'content', file: 'education.html' },
+        'myexperience.html': { element: 'content', file: 'experience.html' },
+        'mypublications.html': { element: 'content', file: 'publications.html' },
+        'mycv.html': { element: 'content', file: 'cv.html' },
+        'myresume.html': { element: 'content', file: 'resume.html' },
+        'mysocial.html': { element: 'content', file: 'social.html' },
+        'mynews.html': { element: 'content', file: 'news.html' },
+        'myreflections.html': { element: 'content', file: 'reflections.html' },
+        'myother.html': { element: 'content', file: 'other.html' }
     };
 
     var currentPage = window.location.pathname.split('/').pop();
