@@ -4,14 +4,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    background-image: url('background.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
 }
 
 /* Header styling */
 header {
-    text-align: center;
-    padding: 50px;
-    background-color: #4CAF50; /* Green color */
+    background-color: rgba(0, 128, 0, 0.8); /* Green color */
     color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 header img {
@@ -20,32 +23,42 @@ header img {
     margin-top: 20px;
 }
 
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 128, 0, 0.8);
+}
+
+nav a {
+    padding: 14px 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
 /* Section styling */
 section {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    text-align: center;
-    margin-top: 0;
 }
 
 /* Footer styling */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #4CAF50;
+    padding: 10px;
+    background-color: rgba(0, 128, 0, 0.8);
     color: white;
-}
-
-/* Link styling */
-a {
-    color: #4CAF50;
 }
 
 /* Linktree styling */
@@ -68,4 +81,18 @@ a {
 .linktree a:hover {
     background-color: #4CAF50;
     color: white;
+}
+
+.icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+/* Tab content styling */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
 }
