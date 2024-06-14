@@ -3,48 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madiha Bencekri - Profile</title>
-    <!-- Link to the external CSS file for styling -->
+    <title>Madiha Bencekri Profile</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Inline CSS for additional styling -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome for icons -->
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
+            background-image: url('background.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
         }
         header {
-            text-align: center;
-            padding: 50px;
-            background-color: #4CAF50; /* Green color */
+            background-color: rgba(0, 128, 0, 0.8); /* Green color */
             color: white;
+            padding: 20px;
+            text-align: center;
         }
         header img {
             width: 150px;
             border-radius: 50%;
             margin-top: 20px;
         }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 128, 0, 0.8);
+        }
+        nav a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
         section {
             padding: 20px;
             margin: 20px auto;
             max-width: 800px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        section h2 {
-            text-align: center;
-            margin-top: 0;
-        }
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #4CAF50;
+            padding: 10px;
+            background-color: rgba(0, 128, 0, 0.8);
             color: white;
-        }
-        a {
-            color: #4CAF50;
         }
         .linktree {
             display: flex;
@@ -64,37 +75,102 @@
             background-color: #4CAF50;
             color: white;
         }
+        .icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <!-- Header section with a profile picture, name, and title -->
     <header>
         <img src="profile.jpg" alt="Profile Picture">
         <h1>Madiha Bencekri, Ph.D.</h1>
         <p>Assistant Researcher Professor in Transportation Engineering and Smart Cities</p>
     </header>
-    <!-- About Me section -->
-    <section id="about">
+    <nav>
+        <a href="#about" class="tablink" onclick="openTab(event, 'about')">About Me</a>
+        <a href="#experience" class="tablink" onclick="openTab(event, 'experience')">Experience</a>
+        <a href="#education" class="tablink" onclick="openTab(event, 'education')">Education</a>
+        <a href="#publications" class="tablink" onclick="openTab(event, 'publications')">Publications & Conferences</a>
+        <a href="#news" class="tablink" onclick="openTab(event, 'news')">News</a>
+        <a href="#resume" class="tablink" onclick="openTab(event, 'resume')">Resume (Short)</a>
+        <a href="#cv" class="tablink" onclick="openTab(event, 'cv')">CV</a>
+        <a href="#materials" class="tablink" onclick="openTab(event, 'materials')">Paper Materials</a>
+        <a href="#others" class="tablink" onclick="openTab(event, 'others')">Others</a>
+    </nav>
+    <section id="about" class="tab-content active">
         <h2>About Me</h2>
         <p>Brief introduction about yourself.</p>
     </section>
-    <!-- Curriculum Vitae section with embedded PDF -->
-    <section id="cv">
-        <h2>Curriculum Vitae</h2>
-        <embed src="Madiha_Bencekri_CV2024.pdf" width="800px" height="2100px" type="application/pdf" />
+    <section id="experience" class="tab-content">
+        <h2>Experience</h2>
+        <p>Your professional experience details go here.</p>
     </section>
-    <!-- Contact section with social media links styled as Linktree -->
+    <section id="education" class="tab-content">
+        <h2>Education</h2>
+        <p>Your educational background goes here.</p>
+    </section>
+    <section id="publications" class="tab-content">
+        <h2>Publications & Conferences</h2>
+        <p>Your publications and conference details go here.</p>
+    </section>
+    <section id="news" class="tab-content">
+        <h2>News</h2>
+        <p>Latest news about you or your work goes here.</p>
+    </section>
+    <section id="resume" class="tab-content">
+        <h2>Resume (Short)</h2>
+        <p>A short version of your resume goes here.</p>
+    </section>
+    <section id="cv" class="tab-content">
+        <h2>Curriculum Vitae</h2>
+        <embed src="Madiha_Bencekri_CV2024.pdf" width="100%" height="600px" type="application/pdf" />
+    </section>
+    <section id="materials" class="tab-content">
+        <h2>Paper Materials</h2>
+        <p>Any additional paper materials go here.</p>
+    </section>
+    <section id="others" class="tab-content">
+        <h2>Others</h2>
+        <p>Other information can go here.</p>
+    </section>
     <section id="contact">
         <h2>Contact</h2>
         <div class="linktree">
-            <a href="https://www.linkedin.com/in/madiha-bencekri">LinkedIn</a>
-            <a href="https://www.researchgate.net/profile/Madiha-Bencekri">ResearchGate</a>
-            <a href="mailto:bencekri.madiha@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/madiha-bencekri"><i class="fab fa-linkedin icon"></i>LinkedIn</a>
+            <a href="https://www.researchgate.net/profile/Madiha-Bencekri"><i class="fab fa-researchgate icon"></i>ResearchGate</a>
+            <a href="https://www.facebook.com/yourprofile"><i class="fab fa-facebook icon"></i>Facebook</a>
+            <a href="https://www.instagram.com/yourprofile"><i class="fab fa-instagram icon"></i>Instagram</a>
+            <a href="mailto:bencekri.madiha@gmail.com"><i class="fas fa-envelope icon"></i>Email</a>
         </div>
     </section>
-    <!-- Footer section -->
     <footer>
         <p>&copy; 2024 Madiha Bencekri</p>
     </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Default open tab
+        document.getElementsByClassName("tablink")[0].click();
+    </script>
 </body>
 </html>
