@@ -1,7 +1,6 @@
-# madiha-bencekri
 # Welcome to My GitHub Profile!
 
-Hello, I am Madiha Bencekri, Ph.D., a research professor specializing in Transportation Engineering and Smart Cities. This GitHub profile is a hub for my professional information and social media platforms.
+Hello, I am Madiha Bencekri, Ph.D., a research professor specializing in Transportation Engineering and Smart Cities. This GitHub profile serves as a hub for my professional information and social media platforms.
 
 ## 📄 My CV
 
